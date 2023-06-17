@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML 5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu servidor.</p>
+    <!--  --> <video src="midia/gato.mp4" width="400" controls></video> <!--coloque em vários formatos, pois alguns navegadores não aceitam determinados formatos. Coloque vários formatos para garantir.-->
+    <p>Mais um vídeo</p>
+    <video src="midia/meuvideo.webm" controls></video>
+    <p>Vídeo do Ozielzinho abaixo:</p>
+    <video src="midia/stilllovingyou.mp4" width="400" controls autoplay loop></video>
+    <!--Essa é a parte minha. Abaixo é a parte do professor-->
+    <h1>Parte do professor</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="500" poster="midia/imagem.jpg" controls>
+        <source src="midia/meuvideo.mp4" type="video/mp4"> <!--Primeiro tenta carregar este. Se não for compatível, tenta do de baixo e assim sucessivamente.-->
+        <source src="midia/meuvideo.webm" type="video/webm">
+        <source src="midia/meuvideo.m4v" type="video/m4v">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    <!--A tag vídeos serve para hospedar os vídeos no próprio site do cliente. Pode gerar custos elevados para ele.-->
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title> 
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            /*Todo formulário tem que estar entre as tags <form> e </form>*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <p>Todo formulário tem que estar entre as tags &ltform&gt&lt/form&gt</p>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p>Se o autopreenchimento estiver incomodando, dentro da tag form, digite autocomplete="off"</p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><label for="iCPF">CPF:</label> <input type="number" name="CPF" id="iCPF"> </p>
+        <p><input type="submit" value="Enviar"></p> <!--Criar o botão de enviar-->
+    </form>
+    <p>É necessário <em>criar uma ligação</em> entre a caixa de texto e o nome que a identifica. Para isso, usa-se o <ins>label</ins>. Selecione "Nome" e "Sobrenome", envelope com label, depois coloque o id dentro do campo "for". O id deve ser estabelecido como no código aqui feito.</p>
+    <p>O método post, dentro de form, serve para não enviar os dados do formulário para a url. Quando os dados não forem sensíveis, pode-se utilizar o método get. Utiliza-se o get, também, quando for compartilhar um link com uma busca específica. Passou de 3000 bytes, não dá para usar o get.</p>
+</body>
+</html>

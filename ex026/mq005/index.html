@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <a href="#"><li>Opção 1</li></a>
+                <a href="#"><li>Opção 2</li></a>
+                <a href="#"><li>Opção 3</li></a>
+                <a href="#"><li>Opção 4</li></a>
+                <a href="#"><li>Opção 5</li></a>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, tenetur expedita? Vel, vero. Veritatis odit, cupiditate ipsam earum dicta voluptatum repellendus consequatur, quas aspernatur modi facilis qui reprehenderit accusantium perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi autem repellendus cum eius perferendis vel necessitatibus provident corporis assumenda repellat. Voluptatum, nulla sit laboriosam autem dolore impedit libero enim illo?</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis a distinctio, inventore hic illum nisi id, earum reprehenderit itaque vel repudiandae beatae velit exercitationem perspiciatis quas voluptate numquam sit. Eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatum ad similique a molestias, dolore nulla deleniti minima ullam ex iure officia maiores laudantium cumque facilis ratione quasi tempora sequi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima temporibus, mollitia laboriosam quia quis, ut et nemo error voluptates placeat corrupti eius nobis saepe nesciunt. Quod iusto asperiores sequi eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem at, inventore ex harum tenetur placeat atque culpa est? Aperiam, animi aliquid! Repudiandae quis quod iusto unde itaque provident voluptates qui!</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            // itens.style.display = 'block' // Estava 'none' e passa a ser 'block'. Se deixar assim, não consigo ocultar novamente clicando... tem que fazer uma condicional
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

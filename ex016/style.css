@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* { /*Seletor global*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #fa7921, #fe9920);
+}
+main {
+    background-color: white; /* As margens ficaram sem espaço no final do texto*/
+    width: auto; /* Largura. Originalmente estava 600px (professor) */
+    border-radius: 10px; /* Comando para arredondar as margens do background-color*/
+    box-shadow: 10px 10px 10px #8b4312bd; /*sombreamento*/
+    padding: 10px; /* comando para dar um espaço entre o background-color e o final do texto nas margens laterais*/
+    margin: auto; /* Comando para centralizar as margens independentemente do tamanho do ajuste da página feito pelo usuário*/
+}
+h1 {
+    color: #942911;
+    text-align: center;
+    text-shadow: 1px 1px 2px #8b4312bd;
+}
+h2 {
+    color: #2d3047;
+}
+p {
+    text-align: justify;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p { /* Seletor para o parágrafo que está dentro da div. O símbolo de (>) significa "filho". O parágrafo filho da div */
+                display: none; /* none é para não mostrar nada. Este seletor foi o responsável por esconder o parágrafo filho da div. */
+        }
+
+        div:hover > p { /* Seletor criado para mostrar o parágrafo escondido quando passar o mouse por cima*/
+            display: block;
+            color: white;
+            background-color: red;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>Texto escondido.</p> <!--Este parágrafo está dentro da div. Ele é "filho da div" -->
+    </div>
+    <p>Fim do exemplo!</p>
+</body>
+</html>

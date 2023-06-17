@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente CSS</title>
+    <style>
+        * { /* Configurações globais das CSS */
+            height: 100%;
+        }
+        body {
+            /*background-image: linear-gradient(to right, white, blue);*/
+            /*background-image: linear-gradient(to top, white, blue);*/
+            /*background-image: linear-gradient(to bottom, #48DEF5, #456F75);*/
+            /*background-image: linear-gradient(to bottom, #38426C, #745EAA, #D64463, #FDCE71, #745D2E);*/
+            background-image: linear-gradient(45deg, #38426C, #745EAA, #D64463, #FDCE71, #745D2E);
+            background-attachment: fixed; /* Este comando é para fixar o degradê na página. Mesmo que o usuário role a página, o efeito se mantém estático. */
+            /* Após cada cor, posso colocar valores percentuais após o código da cor, ex.: 20%, para dizer o tamanho de determinada cor na tela.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

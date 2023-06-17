@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); /*Copie do código no site GoogleFonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /*Copie o código de uso também no site, logo abaixo do código da fonte*/
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px; /*Tirou a margem e o padding de todos os elementos do documento*/
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh; /*É importante colocar isto sempre. Pode ser colocado 100% também no lugar de 100vh*/
+    background-color: darkgray;
+    font-family: var(--fonte1);
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    /* text-transform: uppercase; transforma tudo em maiúsculo */
+    font-family: var(--fonte2);
+    /* font-size: 4em; Desta forma, as letras ficam grandes, mesmo que a tela seja pequena. Para resolver isso...*/
+    font-size: 10vw; /* O tamanho da fonte é 10% da largura (width) da tela (viewport), e diminui conforme a tela é diminuída.*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder; /*negrito*/
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section { /*Seletor para todas as section*/
+    padding-top: 10vh; /*Criou um espaçamento de 10% da tela acima e abaixo*/
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw; /*O tamanho da fonte das section vai se adaptar ao tamanho da tela.*/
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px black; /*Sombra interna*/
+    background-attachment: fixed; /*Efeito paralax*/
+}
+
+section.imagem > p {
+    /* width: 400px; */ /*Assim, o tamanho da caixa fica fixo*/
+    display: inline-block; /*Agora a caixa vai se adaptar ao tamanho do texto*/
+    background-color: rgba(0, 0, 0, 0.274);
+    text-shadow: 1px 1px 0px black;
+    padding: 10px;
+}
+
+section > p {
+    padding-bottom: 1.5em;
+}
+
+section#img01 {
+    background-image: url('../desafio12/imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover; /*Faz com que a imagem de background seja exibida completamente (cover)*/
+} 
+
+section#img02 {
+    background-image: url('../desafio12/imagens/background002.jpg');
+    background-position: left center;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; /*Faz com que a imagem ocupe 100% do box*/
+            position: relative; /*O container, por padrão, já tem uma posição relativa.*/
+            height: 100vh;
+            padding: 10px; /*padding = "borda interna"*/
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; /*Faz com que a imagem ocupe 100% do box*/
+            position: absolute; /* A regra do conteúdo é que seja absoluto*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /*margin: auto;*/ /*Centralizar a caixa automaticamente. O comando margin: auto; só serve para alinhamento horizontal.*/
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

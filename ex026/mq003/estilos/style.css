@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@media all {
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body, html {
+        width: 100vw;
+        height: 100vh;
+        background-color: #233eff;
+    }
+
+    h1 {
+        color: white;
+        text-shadow: 2px 2px 0px #17237c;
+        padding: 10px;
+    }
+}
+
+
+/* declarações retrato */
+@media screen and (orientation: portrait){ /* importante inserir este comando */
+    body {
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    } 
+}
+
+/* declarações paisagem */
+@media screen and (orientation: landscape) {
+    body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-size: contain; /* Adaptar a imagem à tela inteira */
+    background-position: left bottom;
+    background-repeat: no-repeat; 
+    }
+}
+
+/* Posso colar estas configurações do jeito que estão aqui na tag style do arquivo html. Os seletores de media já estão sendo feitos aqui. Não precisa colocar lá. */
