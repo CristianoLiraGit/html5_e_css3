@@ -7,24 +7,25 @@
     <title>Mídias em HTML</title>
 </head>
 <body>
-    <h1>Imagem dinâmica</h1>
+    <h1><a href="https://www.youtube.com/watch?v=E01LDVj0Rpg&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=31" target="_blank">Imagem dinâmica</a></h1>
     <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
     <picture> <!--Esta tag permite que sejam criados vários "sources"-->
-        <source media="(max-width: 750px)" srcset="imagens/imagemp.jpg" type="image/jpg">
+        <source media="(max-width: 390px)" srcset="imagens/imagemp.jpg" type="image/jpg">
+        <source media="(max-width: 750px)" srcset="imagens/imagemmresize.jpg" type="image/jpg">
         <source media="(max-width: 1050px)" srcset="imagens/imagemm.jpg" type="image/jpg"> 
         <img src="imagens/imagemg.jpg" alt="Imagem flexível">
     </picture>
     <h1>Reproduzindo um áudio</h1>
     <p>Vamos aprender a reproduzir áudios em HTML 5.</p>
     <!-- <audio src="midia/TrackTribe.mp3" controls autoplay> </audio>--> 
-    <audio preload="metadata" autoplay controls loop>
+    <audio preload="metadata" controls loop> <!--autoplay-->
         <source src="midia/TrackTribe.mp3" type="audio/mpeg">
         <source src="midia/TrackTribe.ogg" type="audio/ogg">
         <source src="midia/TrackTribe.wav" type="audio/wav">
         <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/TrackTribe.mp3" download="TrackTribe.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo mp3.</a> </p>
     </audio>
     <p>Vamos inserir outro áudio usando HTML 5.</p>
-    <audio preload="metadata" autoplay controls loop>
+    <audio preload="metadata" controls loop> <!--autoplay-->
         <source src="midia/Ticklish2.mp3" type="audio/mpeg">
         <source src="midia/Ticklish2.ogg" type="audio/ogg">
         <source src="midia/Ticklish2.wav" type="audio/wav">
