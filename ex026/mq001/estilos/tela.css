@@ -55,6 +55,19 @@ menu li:active{
     /* transform: translateX(1px); */
 }
 
+h2, p{
+    margin: 5px;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    text-indent: 25px;
+}
+
 article {
     width: 600px;
     display: block;
