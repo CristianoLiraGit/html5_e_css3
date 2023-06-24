@@ -36,7 +36,9 @@ menu li {
 
 menu li:hover{
     background: gray;
-    border: 1px solid black;
+    outline: 1px solid black; /*Borda interna*/
+    outline-offset: -2px; /*Recuo de 2px da borda interna*/
+    color: black;
 }
 
 article {
