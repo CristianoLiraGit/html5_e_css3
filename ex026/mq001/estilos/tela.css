@@ -30,6 +30,13 @@ menu li {
     color: white;
     display: inline-block; /* Faz os menus ficarem lado a lado */
     padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+menu li:hover{
+    background: gray;
+    border: 1px solid black;
 }
 
 article {
