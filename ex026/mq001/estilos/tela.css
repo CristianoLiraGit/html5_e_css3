@@ -41,6 +41,11 @@ menu li:hover{
     color: black;
 }
 
+menu li:active{
+    transform: translate(1px, 1px);
+    /* transform: translateX(1px); */
+}
+
 article {
     width: 600px;
     display: block;
