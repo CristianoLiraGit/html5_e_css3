@@ -39,9 +39,9 @@ menu li {
     text-decoration: none;
 } */
 
-/* menu li a:hover{
-    color: black;
-} */
+/* menu li a:hover{ /* não precisei dessas configurações porque joguei a tag li dentro da tag a*/
+    /* color: black;
+} */ 
 
 menu li:hover{
     background: gray;
