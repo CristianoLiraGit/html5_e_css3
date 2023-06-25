@@ -33,6 +33,10 @@ i#burguer:hover {
     color: black;
 }
 
+i#burguer:active {
+    transform: translate(1px, 1px);
+}
+
 menu {
     display: none; /*O menu tem que ficar sumido, só aparecendo ao clicar no hamburguinho */
 }
