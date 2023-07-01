@@ -34,6 +34,15 @@ menu li {
     border-radius: 5px;
 }
 
+menu > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+menu > ul > li:hover a { /* Ao passar no li, o "a" vai ficar na cor preta. Aqui é uma espécie de condicional. */
+    color: black;
+}
+
 /* a{
     color: white;
     text-decoration: none;
