@@ -30,7 +30,7 @@ menu li {
     color: white;
     display: inline-block; /* Faz os menus ficarem lado a lado */
     padding: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 5px;
 }
 
