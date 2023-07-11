@@ -18,11 +18,9 @@ Grandes telas: acima de 1200px\ex026\mq005\index.html
     menu {
         display: block;
     }
-
     menu > ul > li {
-        display: inline-box; /* Não funcionou */
-    }
-
+            display: inline-box; /* Não funcionou */
+        }
     main {
         width: 768px;
     }
