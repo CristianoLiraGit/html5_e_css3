@@ -46,8 +46,13 @@ Grandes telas: acima de 1200px
         height: 100%;
     }
 
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
     section#login > div#formulario {
         float: right;
         width: 50%;
+        font-size: 1.2em;
     }
 }
