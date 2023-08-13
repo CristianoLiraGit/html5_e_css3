@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        /* color: blue; */
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: lightblue;
+        height: 100vh; /*Importante para centralizar a div no meio da tela*/
+    }
+    main {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.61);
+        padding: 5px 15px;
+    }
+</style>
+<body>
+    <main>
+        <h1>Verificador de Nacionalidade</h1>
+        <label for="nacionalidade">Nacionalidade:</label>
+        <input type="text" id="nacionalidade" placeholder="Informe aqui">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res"></div>
+    </main>
+    <script src="ex009.js"></script>
+</body>
+</html>
