@@ -42,15 +42,23 @@
         color: white;
         margin: 10px 0px;
     }
+    p {
+        text-align: justify;
+    }
 </style>
 <body>
     <main>
         <h1>Aula 10 - JavaScript CursoemVídeo<h1>
         <h2>- <u>Eventos do DOM</u> -</h2>
-        <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">Interaja...</div>
+        <h3>Mesmo código, usando "listeners"</h3>
+        <div id="area">Interaja...</div>
+        <p>Ao adicionar listeners logo abaixo das variáveis, não é necessário mais usar os comandos onmouseenter, onclick, onmouseout na tag principal, como no exemplo da <strong>tag div area</strong>.</p>
     </main>
     <script>
         let a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
         function clicar() {
             //let a = window.document.getElementById('area').innerText = 'Clicou'
             // a.innerText = 'Clicou' // posso eliminar este comando, passando os parâmetros diretamente como no exemplo acima.
