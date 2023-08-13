@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: lightblue;
+        font: normal 18pt arial;
+    }
+</style>
+<body>
+    <h1>Iniciando Estudos do DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <button class="btn">Clique aqui</button>
+
+    <script>
+        var paragrafo = window.document.getElementsByTagName('h1')[0] // Ao usar o seletor por TagName, é necessário dizer a posição da tag entre colchetes.
+        var p1 = window.document.getElementsByTagName('p')[1]
+        let btn1 = window.document.getElementsByClassName('btn')[0]
+
+        paragrafo.style.color = 'red'
+        p1.style.color = 'blue'
+        p1.innerText = 'Meus ovos'
+        window.document.getElementsByTagName('p')[0].innerText = 'Mudei via JS' // Modifiquei sem criar a variável antes.
+        
+        btn1.addEventListener('click', clicar)
+        function clicar() {
+            window.alert('Mensagem qualquer.')
+        }
+    </script>
+</body>
+</html>
