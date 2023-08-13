@@ -8,14 +8,26 @@
 <style>
     body {
         background-color: lightblue;
+        display: flex;
+        flex-direction: column;
         font: normal 18pt arial;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        background-color: white;
+        padding: 5px 15px;
+        width: 80vw;
     }
 </style>
 <body>
-    <h1>Iniciando Estudos do DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <button class="btn">Clique aqui</button>
+    <main>
+        <h1>Iniciando Estudos do DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+        <button class="btn">Clique aqui</button>
+    </main>
+    
 
     <script>
         var paragrafo = window.document.getElementsByTagName('h1')[0] // Ao usar o seletor por TagName, é necessário dizer a posição da tag entre colchetes.
