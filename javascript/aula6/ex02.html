@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Exercício</title>
+</head>
+    <style>
+        body {
+            background-color: gray;
+            color: black;
+            font: normal 20pt Arial;
+        }
+        main {
+            background-color: white;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+<body>
+    <main>
+        <h1>Olá, mundo!</h1>
+        <h2>Ex002 - Guardando os dados do Prompt</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur repellendus debitis qui earum maiores id, officiis perferendis ullam.</p>
+        <button id="btn_msg">Alerta</button>
+    </main>
+    
+    <script>
+        let btn = document.querySelector('#btn_msg')
+        let msg = 'Esta é minha primeira mensagem.'
+        btn.addEventListener('click', function (e){
+            window.alert(`Olá, mundo! ${msg}`)
+            window.confirm('Está gostando de JS?')
+            let nome = window.prompt('Qual é o seu nome?') // Comando para guardar os dados digitados no prompt
+            window.alert(`Olá, ${nome}, prazer em conhecê-lo.`)
+        })
+    </script>
+</body>
+</html>

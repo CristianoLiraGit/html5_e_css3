@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: gray;
+        color: black;
+        font: normal 20pt Arial;
+    }
+    main {
+        background-color: white;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    p {
+        margin: 15px;
+    }
+
+    pre {
+        margin: -20px;
+    }
+</style>
+<body>
+    <main>
+        <h1>Olá, mundo!</h1>
+        <p>Converter uma string para número:</p>
+        <pre>
+        var n1 = Number(window.prompt('Digite um número:'))
+        var n2 = Number(window.prompt('Digite outro número:))'
+        <pre>
+        <p>Converter string para número:</p>
+        <pre>
+            String(n) ou 
+            n.toString
+        </pre>
+    </main>
+    <script>
+        // var n1 = window.prompt('Digite um número: ') // Recebeu string
+        // var n2 = window.prompt('Digite outro número: ') // Recebeu string
+
+        // var soma = n1 + n2 // Tem que converter de string para número
+        // window.alert('A soma dos valores é : '+soma) // aqui houve concatenação
+        // (number + number) para adição
+        // (string + string) para concatenação
+        // IMPORTANTE: o comando prompt retorna string. Isso é uma característica do comando
+
+        // Refazendo...
+        /*
+        var n1 = Number.parseFloat(window.prompt('Digite um número:'))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número:'))
+        */
+        // Os comandos acima podem ser simplificados, retirando-se o parseInt, parseFloat... Vejamos: 
+        /*
+        var n1 = Number(window.prompt('Digite um número:'))
+        var n2 = Number(window.prompt('Digite outro número:'))
+        */
+
+        var soma = n1 + n2
+        // window.alert(`A soma dos números é ${soma}.`)
+
+    </script>
+</body>
+</html>
