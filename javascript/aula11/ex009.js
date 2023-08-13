@@ -1,8 +1,13 @@
 function verificar(){
-    var país = document.querySelector('input#nacionalidade')
-    var res = document.querySelector('div#res')
-    var nacio = (país.value)
-    
+    var país = document.getElementById('nacionalidade')
+    var res = document.getElementById('res')
+    var nacio = país.value.toUpperCase()
+    res.innerHTML = `<p>Nacionalidade informada é <strong>${nacio}</strong>.</p>`
+    if (nacio != 'BRASIL'){
+        res.innerHTML += `<p>Você é estrangeiro!</p>`
+    } else {
+        res.innerHTML += '<p>Você é brasileiro!</p>'
+    }
 }
 
 /*
