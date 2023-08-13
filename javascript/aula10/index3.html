@@ -22,17 +22,31 @@
     main {
         background-color: white;
         border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.521), -5px -5px 10px rgba(128, 128, 128, 0.521);
         padding: 5px 15px;
         margin: 15px 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h1 {
+        margin-bottom: 10px;
+    }
+    #inputs {
+        margin: 10px;
     }
 </style>
 <body>
     <main>
         <h1>Somando Números</h1>
-        <input type="number" name="txtn1" id="txtn1"> +
-        <input type="number" name="txtn2" id="txtn2">
-        <input type="button" value="Somar" onclick="somar()">
-        <!-- <button type="reset">Limpar</button> -->
+        <div id="inputs">
+            <input type="number" name="txtn1" id="txtn1"> +
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="Somar" onclick="somar()">
+            <!-- <button type="reset">Limpar</button> -->
+        </div>
+        
         <div id="res">Resultado</div>
 
         <script>
