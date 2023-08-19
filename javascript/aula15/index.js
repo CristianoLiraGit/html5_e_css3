@@ -48,10 +48,11 @@ if (pos == -1){
 }
 */
 
-var input = document.getElementById('inputId');
+var input = document.getElementById('input');
 var btn = document.getElementById('btn_save')
 var array = [];
-function salvar() {
+btn.addEventListener('click', function(e){
+    array.push(input.value);
+    window.alert(`número ${array} cadastrado`)
     
-}
-array.push(input.value);
+})
