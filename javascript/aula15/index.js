@@ -35,7 +35,7 @@ for(let pos in valores) {
 */
 
 // 4º bloco de códigos
-
+/*
 num = [4, 5, 6, 7, 8]
 
 // console.log(num.indexOf(7))
@@ -46,3 +46,12 @@ if (pos == -1){
 } else {
     console.log(`O número pesquisado está na posição ${pos}`)
 }
+*/
+
+var input = document.getElementById('inputId');
+var btn = document.getElementById('btn_save')
+var array = [];
+function salvar() {
+    
+}
+array.push(input.value);

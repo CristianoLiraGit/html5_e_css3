@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Centralizar o conteúdo do main no centro da tela*/
+    }
+    main {
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px 15px;
+        height: 110px;
+    }
+</style>
 <body>
-    <h1>Variáveis compostas</h1>
-    <p>Variáveis compostas são também chamadas de arrays ou vetores</p>
+    <main>
+        <h1>Variáveis compostas</h1>
+        <p>Variáveis compostas são também chamadas de arrays ou vetores.</p>
+        <label for="input">Digite um valor:</label>
+        <input type="number" name="valor" id="input" placeholder="número">
+        <button id="btn_save" type="submit" onclick="salvar()">Cadastrar</button>
+        <div id="array"></div>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
