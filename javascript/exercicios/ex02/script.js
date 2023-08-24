@@ -42,7 +42,6 @@ function verificar() {
                 img.setAttribute('src', 'imagens/idosa.jpg')
             }
         }
-        // res.style.textAligh = 'center' // não funcionou
         res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
         res.appendChild(img) // comando para mostrar a imagem
     }
