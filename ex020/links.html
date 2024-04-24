@@ -15,7 +15,7 @@
             font-weight: bold;
         }
 
-        a:visited { /* Ao ser visitado, o link vai ficar na cor darkred */
+        a:visited { /* Ao ser visitado, o link vai ficar na cor darkred (por padrão fica roxo) */
             color: darkred;
         }
 
@@ -25,16 +25,16 @@
             font-weight: lighter;
         }
 
-        a:active {
+        a:active { /* Ao ser clicado o elemento vai ficar na cor azul */
             color: blue;
             font-weight: bold;
         }
 
-        .especial::before {
+        .especial::before { /* pseudo-elemento: serve para adicionar uma "coisa" antes (no caso, uma seta para direita)*/
             content:'→ ';
         }
 
-        .especial::after {
+        .especial::after { /* Adicionou um a "coisa" depois (uma seta para esquerda depois do elemento) */
             content:' ←' ;
         }
 
