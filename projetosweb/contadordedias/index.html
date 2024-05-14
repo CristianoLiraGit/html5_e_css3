@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @charset "UTF-8";
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    main {
+        background-color: yellow;
+        border-radius: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin-top: 10px;
+        height: 250px;
+    }
+
+    button {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .background_msg {
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px;
+    }
+</style>
+<body>
+    <main>
+        <h1>Calcular Dias</h1>
+        <label for="data1">Data Inicial</label>
+        <input type="text" name="data1" id="data1" placeholder="ano-mês-dia"><br>
+        <label for="data2">Data Final</label>
+        <input type="text" name="data2" id="data2" placeholder="ano-mês-dia">
+        <button id="btn">Calcular</button>
+        <p id="msg"></p>
+    </main>
+    
+    <script>
+        let data1 = document.querySelector("#data1");
+        let data2 = document.querySelector('#data2');
+        let btn = document.querySelector('#btn');
+        let msg = document.querySelector('#msg');
+
+        btn.addEventListener('click', ()=>{
+            const dataInicial = new Date(data1.value); // ano/mês/dia
+            const dataFinal = new Date(data2.value); // ano/mês/dia
+            const diferencaEmMs = dataFinal - dataInicial;
+            const diferencaEmDias = diferencaEmMs / (1000 * 60 * 60 * 24);
+            console.log(`Diferença em dias: ${diferencaEmDias}`);
+            msg.setAttribute('class', 'background_msg')
+            msg.textContent = `A Diferença em dias é ${diferencaEmDias} dias.`
+            
+        })
+
+        
+
+// Caso de erro, código abaixo.
+        //const dataInicial = new Date('2024-04-27'); // ano/mês/dia
+        //const dataFinal = new Date('2024-05-14'); // ano/mês/dia
+        //const diferencaEmMs = dataFinal - dataInicial;
+        //const diferencaEmDias = diferencaEmMs / (1000 * 60 * 60 * 24);
+        //console.log(`Diferença em dias: ${diferencaEmDias}`);
+    </script>
+</body>
+</html>
